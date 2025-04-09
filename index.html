@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brochure PYRED</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    section {
+      max-width: 900px;
+      width: 100%;
+    }
+    h2 {
+      color: #1e3a8a;
+      margin-top: 2rem;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 2rem;
+    }
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .highlight {
+      color: #2563eb;
+      font-weight: bold;
+    }
+    .img-inline {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .img-inline img {
+      width: 25%;
+      max-width: 180px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .img-inline.reverse {
+      flex-direction: row-reverse;
+    }
+    .contact-info {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .contact-info img {
+      width: 50px;
+      height: auto;
+      border-radius: 4px;
+    }
+    .contact-form {
+      margin-top: 2rem;
+    }
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact-form label {
+      font-weight: bold;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 600px;
+    }
+    .contact-form button {
+      background-color: #1e3a8a;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 4px;
+      cursor: pointer;
+      max-width: 200px;
+    }
+    .contact-form button:hover {
+      background-color: #374bbd;
+    }
+    @media (max-width: 768px) {
+      .img-inline {
+        flex-direction: column;
+        align-items: center;
+      }
+      .img-inline.reverse {
+        flex-direction: column;
+      }
+      .img-inline img {
+        width: 50%;
+      }
+      .contact-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1>PYRED</h1>
+    <p><strong>Protección y Reforzamiento de Estructuras y Edificaciones</strong></p>
+  </header>
+
+  <main>
+    <section>
+      <div class="img-inline">
+        <img src="static/img1.png" alt="Imagen 1 - Portada técnica">
+        <div>
+          <h2>¿Quiénes Somos?</h2>
+          <p>PYRED es una empresa colombiana especializada en el diseño, reforzamiento y protección de estructuras y edificaciones. Liderada por el Ingeniero Civil <span class="highlight">Efren Sandoval Mora</span>, egresado de la Universidad Nacional de Colombia, contamos con más de 15 años de experiencia en el sector, ofreciendo soluciones técnicas, seguras y de alta calidad para nuestros clientes.</p>
+        </div>
+      </div>
+
+      <div class="img-inline reverse">
+        <img src="static/img2.png" alt="Imagen 2 - Reforzamiento estructural">
+        <div>
+          <h2>Servicios</h2>
+          <ul>
+            <li>Diseño estructural y arquitectónico tradicional y especializado.</li>
+            <li>Estudios técnicos post-sismo o por deterioro estructural.</li>
+            <li>Análisis de riesgo en edificaciones existentes.</li>
+            <li>Consultoría en materiales y soluciones para impermeabilización y reforzamiento.</li>
+            <li>Supervisión e interventoría en proyectos de construcción.</li>
+            <li>Planeación y ejecución de proyectos de reforzamiento estructural e impermeabilización.</li>
+            <li>Obra civil especializada, ejecutada por personal certificado.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="img-inline">
+        <img src="static/img3.png" alt="Imagen 3 - Clientes y proyectos">
+        <div>
+          <h2>Clientes Destacados</h2>
+          <ul>
+            <li>SENA</li>
+            <li>Constructora Bolívar</li>
+            <li>Club El Nogal</li>
+            <li>Fondo Rotatorio de la Policía Nacional</li>
+            <li>Superintendencia de Notariado y Registro</li>
+            <li>Instituto Distrital de Recreación y Deporte (IDRD)</li>
+            <li>EMGESA</li>
+            <li>Alcaldías de Mitú, Tenjo y Madrid</li>
+            <li>Caja de la Vivienda Popular</li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h2>¿Por Qué Elegirnos?</h2>
+        <ul>
+          <li>Experiencia certificada.</li>
+          <li>Alianzas estratégicas con proveedores y expertos del sector.</li>
+          <li>Compromiso con la calidad y los tiempos de entrega.</li>
+          <li>Soluciones a la medida, ajustadas a normativas técnicas vigentes.</li>
+        </ul>
+      </div>
+
+      <h2>Contáctanos</h2>
+      <div class="contact-info">
+        <img src="static/img4.png" alt="Imagen 4 - Información de contacto">
+        <div>
+          <p><strong>Efren Sandoval Mora</strong><br>
+          Ingeniero Civil - Universidad Nacional de Colombia<br>
+          <span class="highlight">Email:</span> Ing.easm@gmail.com<br>
+          <span class="highlight">Teléfono:</span> (+57) 310 325 3302<br>
+          <span class="highlight">Ubicación:</span> Bogotá, Colombia<br>
+          <span class="highlight">Web:</span> <a href="http://e45m.github.io/pyred" target="_blank">http://e45m.github.io/pyred</a></p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+  <h2>Escríbenos</h2>
+<div>
+
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSeNa0-ysGGm5CGXNrWo95UJQtNaQXavDoc-zWwfI3jfZhwv2Q/formResponse" method="POST" target="_blank" onsubmit="if(document.getElementById('message').value.trim()===''){document.getElementById('message').value='sin mensaje';}">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="entry.2005620554" required>
+
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="entry.1045781291" required>
+
+          <label for="phone">Teléfono (opcional)</label>
+<input type="tel" id="phone" name="entry.1166974658">
+
+<label for="message">Mensaje</label>
+<textarea id="message" name="entry.839337160" rows="5" required></textarea>
+
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+  </div>
+</div>
+</section>
+  </main>
+
+  <footer>
+    <p>PYRED - Seguridad estructural, confianza y calidad en cada proyecto.</p>
+  </footer>
+</body>
+</html>
